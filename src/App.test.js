@@ -12,6 +12,8 @@ test('render App without errors', () =>{
   const header = screen.getByText(/Add new Animal/i);
   console.log(header);
 
+
+  // Add in npm test to start test
   expect(header).toBeInTheDocument();
   expect(header).toBeTruthy();
   expect(header).toHaveTextContent(/add new animal/i);
